@@ -32,16 +32,16 @@ def main():
     if na == cl2*2:
         nacl = na
     if na > cl2*2:
-        nacl = cl2
+        nacl = cl2*2
         excess_na = na - cl2*2
     if cl2*2 > na:
         nacl = na
-        excess_cl2 = cl2*2 - na
+        excess_cl = cl2*2 - na
     
     print("You can make {amount} NaCl, isn't that exciting".format(amount = nacl))
     if excess_na > 0:
         print("But you have excess of Na by {0}".format(excess_na))
-    if excess_cl2 > 0:
+    if excess_cl > 0:
         print("But you have excess of Cl by {0}".format(excess_cl))
 
 if __name__ == "__main__":
