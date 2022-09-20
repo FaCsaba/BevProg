@@ -11,7 +11,7 @@ from typing import Dict, List, Tuple, AnyStr
 
 
 def masodfoku(a, b, c) -> Tuple[float, float]: # Másodfokú egyenlet, doesn't handle edge cases!!
-    return (-b+sqrt(b**2-4*a*c)/2*a), (-b-sqrt(b**2-4*a*c))/2*a
+    return (-b+sqrt(b**2-4*a*c))/(2*a), (-b-sqrt(b**2-4*a*c))/(2*a)
 
 # Weighted average formula
 # Input is a list of dictionary that has a weight and a value
