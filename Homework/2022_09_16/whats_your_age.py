@@ -24,7 +24,7 @@ def ask_for_input() -> int:
 AMERICAN_LEGAL_DRINKING_AGE = 21
 CAN_BUY_CIGARETTES_IN_HUNGARY = 18
 HUNGARIAN_LEGAL_AGE_TO_GET_A_DRIVERS_LICENSE = 17
-CAN_WATCH_SHREK = 12
+CAN_WATCH_SHREK_2 = 12
 
 def main():
     age = ask_for_input()
@@ -34,7 +34,7 @@ def main():
         print("Congrats you can corrode your lungs with fags. You can legally buy cigarette products in hungary")
     if age >= HUNGARIAN_LEGAL_AGE_TO_GET_A_DRIVERS_LICENSE:
         print("You can have a drivers license in Hungary. Doesn't mean you can afford it though.")
-    if age >= CAN_WATCH_SHREK:
+    if age >= CAN_WATCH_SHREK_2:
         print("You can watch the best piece of cinema there is. You are allowed to view Shrek 2!")
     else:
         print("You are a literal baby. You can't do anything")
