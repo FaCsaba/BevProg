@@ -1,0 +1,20 @@
+[package]
+name = "rust_homework"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "whats_your_age"
+src = "src/whats_your_age.rs"
+
+[[bin]]
+name = "math_stuff"
+src = "src/math_stuff.rs"
+
+[[bin]]
+name = "na_cl"
+src = "src/na_cl.rs"
+
+[dependencies]
