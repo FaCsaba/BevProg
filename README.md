@@ -1,2 +1,3 @@
 # BevProg
-Bevezetés a programozásba. Python 3
+Bevezetés a programozásba
+We are using Python 3.10 in these lectures
