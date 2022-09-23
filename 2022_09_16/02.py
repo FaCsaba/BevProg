@@ -9,8 +9,8 @@ def main():
     a = 'Hello'
     b = 'World'
     print(a + " " + b)
-    
-    a = 2   # 
+
+    a = 2   #
     a += 3
     a *= 9
     a = a//7
@@ -18,8 +18,9 @@ def main():
     a = a % 8
     a -= 1
     print(chr(a))
-    
+
     print(ord("@"))
+
 
 if __name__ == "__main__":
     main()

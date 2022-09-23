@@ -2,7 +2,7 @@
 # coding: utf8
 # Tuples are lovely
 
-def _tuple(): 
+def _tuple():
     kartya = (1, "Priscilla", 4.5)
     id, nev, jegy = kartya
     print(kartya)
@@ -10,7 +10,8 @@ def _tuple():
     print(nev)
     print(jegy)
 
-def _dict():    
+
+def _dict():
     osztalyzat = {"Anna": 2.5, "Bela": 2, "Cecilia": 1}
     osztalyzat["Anna"] = 5
     print(osztalyzat)
@@ -18,6 +19,7 @@ def _dict():
     print(osztalyzat.keys())
     print(osztalyzat.values())
     print(osztalyzat.items())
+
 
 if __name__ == "__main__":
     _tuple()

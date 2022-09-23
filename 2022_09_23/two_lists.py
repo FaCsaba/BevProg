@@ -8,5 +8,6 @@ def main():
 
     print(list(filter(lambda x: x in l2, l1)))
 
+
 if __name__ == "__main__":
     main()

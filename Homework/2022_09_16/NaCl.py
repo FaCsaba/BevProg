@@ -3,7 +3,7 @@
 
 # Homework 3:
 # We must ask the user for some amount of Na and some amount of Cl
-# Based on those we must print out how many NaCl-s we could make 
+# Based on those we must print out how many NaCl-s we could make
 # if there are excessive amounts we must print that as well
 # 2NaCl = 2Na + Cl2
 from types import LambdaType
@@ -21,14 +21,17 @@ def handle_user_input(phrase: AnyStr, type: type, validation: LambdaType, valida
         except ValueError:
             continue
 
+
 def main():
-    na = handle_user_input("How many Na-s do you have? ", int, lambda x: x >= 0)
-    cl2 = handle_user_input("How many Cl\u2082-s do you have? ", int, lambda x: x >= 0)
+    na = handle_user_input("How many Na-s do you have? ",
+                           int, lambda x: x >= 0)
+    cl2 = handle_user_input(
+        "How many Cl\u2082-s do you have? ", int, lambda x: x >= 0)
 
     nacl = 0
     excess_na = 0
     excess_cl = 0
-    
+
     if na == cl2*2:
         nacl = na
     if na > cl2*2:
@@ -37,12 +40,14 @@ def main():
     if cl2*2 > na:
         nacl = na
         excess_cl = cl2*2 - na
-    
-    print("You can make {amount} NaCl, isn't that exciting".format(amount = nacl))
+
+    print("You can make {amount} NaCl, isn't that exciting".format(
+        amount=nacl))
     if excess_na > 0:
         print("But you have excess of Na by {0}".format(excess_na))
     if excess_cl > 0:
         print("But you have excess of Cl by {0}".format(excess_cl))
+
 
 if __name__ == "__main__":
     main()

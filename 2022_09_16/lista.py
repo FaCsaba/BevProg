@@ -14,8 +14,7 @@ def main():
     li.sort()
     print(li)
     print(li.index("barack"))
-    
-    
+
 
 if __name__ == "__main__":
     main()
