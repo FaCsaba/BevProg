@@ -1,23 +1,27 @@
-
-fn prompt_for_input<F, T: std::str::FromStr>(prompt_msg: &str, validation: F) -> T 
-where 
-F: FnOnce(&T) -> bool + Copy, <T as std::str::FromStr>::Err: std::fmt::Debug {
+fn prompt_for_input<F, T: std::str::FromStr>(prompt_msg: &str, validation: F) -> T
+where
+    F: FnOnce(&T) -> bool + Copy,
+    <T as std::str::FromStr>::Err: std::fmt::Debug,
+{
     println!("{}", prompt_msg);
     let mut inp = String::new();
     let mut inp_change_type: T;
     loop {
         std::io::stdin()
-            .read_line(&mut inp).expect("Couldn't read from std in");
-        if inp.trim().parse::<T>().is_ok()  {
+            .read_line(&mut inp)
+            .expect("Couldn't read from std in");
+        if inp.trim().parse::<T>().is_ok() {
             inp_change_type = inp.trim().parse().expect("unreachable");
-            if !inp.is_empty() && validation(&inp_change_type) {break}
+            if !inp.is_empty() && validation(&inp_change_type) {
+                break;
+            }
         }
     }
     inp_change_type
 }
 
 fn main() {
-    let age: u32 = prompt_for_input("What is your age?", |x| {x > &0});
+    let age: u32 = prompt_for_input("What is your age?", |x| x > &0);
     if age >= 21 {
         println!("You can legally drink in the USA!")
     }
