@@ -38,12 +38,12 @@ def ask_for_int(inp_message: str) -> int:
 
 
 def ask_for_str(inp_message: str) -> str:
-    while True:  # simple error handling. if user provides incorrect data we loop until we get a number
+    while True:  # simple error handling. if user provides incorrect data we loop until we get a string
         try:
             inp = input(inp_message)
             return str(inp)
         except ValueError as err:
-            print("{inp} is not a number".format(inp=inp))
+            print("{inp} is not a string".format(inp=inp))
             continue
 
 
