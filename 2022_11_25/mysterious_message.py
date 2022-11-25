@@ -5,8 +5,8 @@
 
 import os
 
-ABC = "ABCDEFGHIJKLMNOPQRSTWXYZ"
-abc = "ABCDEFGHIJKLMNOPQRSTWXYZ".lower()
+ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".lower()
 
 def shift(t: str, n: int) -> str:
     if t in ABC:
