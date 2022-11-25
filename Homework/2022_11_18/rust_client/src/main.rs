@@ -7,7 +7,6 @@ fn main() {
     // we could theoretically use a socket, as that is also just a file but for the sake of it I am using a regular file
     let mut file = std::fs::OpenOptions::new()
         .read(true)
-        .write(true)
         .open(&path)
         .expect("Creating file failed");
     
